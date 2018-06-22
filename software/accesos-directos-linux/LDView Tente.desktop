@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/opt/ldraw/software/linux-scripts/ldview-tente.sh
+Name=LDView Tente
+Comment=Visor Tente 3D
+Icon=/opt/ldraw/software/iconos/linux/ldviewtente.png

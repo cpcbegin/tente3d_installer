@@ -1,0 +1,22 @@
+Kit de configuración LDCad multiconstrucción para Windows (ver. 0.1 alfa)
+=========================================================================
+
+Aplicaciones que hay que instalar para usar esta configuración:
+- LDView: http://ldview.sourceforge.net
+
+Copiar el contenido de este ZIP en la carpeta C:\
+Descomprimir en las siguientes carpetas las librerías de piezas:
+C:\LDRAW\TENTE  => Descargar de http://dl.getdropbox.com/u/1076721/LDraw/LDrawTente_Ultima.zip
+C:\LDRAW\EXINCASTILLOS  => Descargar de http://www.exincastillos.es/foro/creando-piezas-virtuales.html (requiere darse de alta y autenticarse)
+C:\LDRAW\LEGO => Descargar de http://www.ldraw.org
+
+Descomprimir en las siguientes carpetas los siguientes programas:
+C:\LDRAW\SOFTWARE\MLCAD_V3.40 ==> La versión 3.40 de MLCad, descargar de http://mlcad.lm-software.com/e_default.htm
+(Opcionales)
+C:\LDRAW\SOFTWARE\BMP2LDRAW ==> BMP2LDRAW, descargar de http://205.196.123.184/t75cw79px9zg/tvswby3h5qs/BMP2LDraw.zip
+C:\LDRAW\SOFTWARE\LDDP ==> LDDesignPad, descargar de http://lddp.sourceforge.net/
+Etc...
+
+Copiar al escritorio el contenido de la carpeta C:\ldraw\software\accesos-directos-windows
+
+Visita recomendada: http://malagaoriginal.blogspot.com.es/search/label/3D

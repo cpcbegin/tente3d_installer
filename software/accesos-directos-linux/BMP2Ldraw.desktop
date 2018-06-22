@@ -1,0 +1,12 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=wine /opt/ldraw/software/bmp2ldraw/bmp2ldraw32.exe
+Name[es_ES]=BMP2Ldraw Tente
+Comment[es_ES]=Pasa pegatinas a fichas de tente
+Name=BMP2Ldraw
+Comment=Pasa pegatinas a fichas de tente
+Icon=/opt/ldraw/software/iconos/linux/astro.png

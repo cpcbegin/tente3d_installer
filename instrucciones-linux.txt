@@ -1,0 +1,23 @@
+Kit de configuración LDCad multiconstrucción para GNU/Linux (ver. 0.1 alfa)
+===========================================================================
+
+Aplicaciones que hay que instalar para usar esta configuración:
+- LDView: http://ldview.sourceforge.net
+- Wine y, en su caso, la librerías que necesites para tu distribución: instalar desde el repositorio de tu distribución. Visita http://es.tente3d.wikia.com
+
+Copiar el contenido de este ZIP en la carpeta /opt
+Descomprimir en las siguientes carpetas las librerías de piezas:
+/opt/ldraw/tente/  => Descargar de https://www.dropbox.com/s/irba95qphdxtiq7/LDrawTente_Ultima.zip?dl=0
+/opt/ldraw/exincastillos/  => Descargar de http://www.exincastillos.es/foro/creando-piezas-virtuales.html (requiere darse de alta y autenticarse)
+/opt/ldraw/lego/ => Descargar de http://www.ldraw.org
+
+Descomprimir en las siguientes carpetas los siguientes programas:
+/opt/ldraw/software/MLCad_V3.40/ ==> La versión 3.40 de MLCad, descargar de http://mlcad.lm-software.com/e_default.htm
+(Opcionales)
+/opt/ldraw/software/bmp2ldraw/ ==> BMP2LDRAW, descargar de http://205.196.123.184/t75cw79px9zg/tvswby3h5qs/BMP2LDraw.zip
+/opt/ldraw/software/lddp/ ==> LDDesignPad, descargar de http://lddp.sourceforge.net/
+Etc...
+
+Copiar a $HOME/Desktop (o $HOME/Escritorio en algunas distribuciones) el contenido de la carpeta /opt/ldraw/software/accesos-directos-linux
+
+Visita recomendada: http://malagaoriginal.blogspot.com.es/search/label/3D

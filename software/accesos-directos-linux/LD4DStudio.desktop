@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[es_ES]=/usr/share/pixmaps/cpcbegin/ldraw3d.png
+Name[es_ES]=LD4DStudio
+Exec=wine /opt/ldraw/software/LD4DStudio/LD4DStudio.exe
+Name=LD4DStudio
+Icon=/usr/share/pixmaps/cpcbegin/ldraw3d.png
