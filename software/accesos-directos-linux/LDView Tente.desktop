@@ -7,3 +7,4 @@ Exec=/opt/ldraw/software/linux-scripts/ldview-tente.sh
 Name=LDView Tente
 Comment=Visor Tente 3D
 Icon=/opt/ldraw/software/iconos/linux/ldviewtente.png
+Categories=Tente3D;Graphics;3DGraphics;RasterGraphics

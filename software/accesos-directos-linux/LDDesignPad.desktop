@@ -1,10 +1,10 @@
-
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=false
-Exec=/opt/ldraw/software/lddp/lddesignpad.exe
+Exec=wine /opt/ldraw/software/lddp/LDDesignPad.exe
 Name[es_ES]=LDDesignPad
 Name=LDDesignPad
 Icon=/opt/ldraw/software/iconos/linux/ruta.png
+Categories=Tente3D;Graphics;3DGraphics;RasterGraphics

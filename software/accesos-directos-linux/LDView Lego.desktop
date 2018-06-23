@@ -7,3 +7,4 @@ Exec=/opt/ldraw/software/linux-scripts/ldview-lego.sh
 Name=LDView Lego
 Comment=Visor Lego 3D
 Icon=/usr/share/pixmaps/LDView.png
+Categories=Tente3D;Graphics;3DGraphics;RasterGraphics

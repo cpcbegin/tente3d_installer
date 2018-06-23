@@ -9,3 +9,4 @@ Name[es_ES]=MLCAD Tente
 Name=MLCAD Tente
 Comment=Editor de tente virtual
 Icon=/opt/ldraw/software/iconos/linux/mlcadtente.png
+Categories=Tente3D;Graphics;3DGraphics;RasterGraphics

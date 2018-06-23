@@ -7,3 +7,4 @@ Exec=/opt/ldraw/software/linux-scripts/ldview-exincastillos.sh
 Name=LDView Exin Castillos
 Comment=Visor Exin Castillos 3D
 Icon=/opt/ldraw/software/iconos/linux/ldviewexincastillos.png
+Categories=Tente3D;Graphics;3DGraphics;RasterGraphics
