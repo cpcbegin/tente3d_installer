@@ -56,11 +56,6 @@ chown -R $FIRSTSUDOUSER $DESKTOPPATHTENTE
 echo "Todo lo que hay en $LDRAWHOME pertenece al primer usuario '$FIRSTSUDOUSER'"
 chown -R $FIRSTSUDOUSER $LDRAWHOME
 
-echo "Instalando la librería de piezas TENTE..."
-wget -c https://www.dropbox.com/s/irba95qphdxtiq7/LDrawTente_Ultima.zip?dl=0 -O $LDRAWTMP/LDrawTente_Ultima.zip
-unzip -u $LDRAWTMP/LDrawTente_Ultima.zip -d $LDRAWHOME/tente
-rm $LDRAWTMP/LDrawTente_Ultima.zip
-
 echo "Instalando MLCad 3.40..."
 wget -c http://mlcad.lm-software.com/MLCad_V3.40.zip -O $LDRAWTMP/mlcad.zip
 unzip $LDRAWTMP/mlcad.zip -d $LDRAWHOME/software/
@@ -95,3 +90,12 @@ fi
 
 echo "Instalamos Blender y Povray..."
 sudo apt-get install povray blender
+
+
+echo "Instalando la librería de piezas TENTE..."
+wget -c https://www.dropbox.com/s/irba95qphdxtiq7/LDrawTente_Ultima.zip?dl=0 -O $LDRAWTMP/LDrawTente_Ultima.zip
+unzip -u $LDRAWTMP/LDrawTente_Ultima.zip -d $LDRAWHOME/tente
+rm $LDRAWTMP/LDrawTente_Ultima.zip
+
+echo "Creamos enlace blando para la librería LEGO"
+ln -svf /usr/share/ldraw $LDRAWHOME/lego
