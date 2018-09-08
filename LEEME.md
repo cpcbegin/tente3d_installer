@@ -15,12 +15,12 @@ Este script instala y deja correctamente configuradas las siguientes aplicacione
 * povray 3.7
 * Blender
 
-##Otros recursos que incluye:
+## Otros recursos que incluye:
 
 * Librería de piezas LDraw TENTE (Jasolo)
 * Librería de piezas LDraw LEGO (http://www.ldraw.org/)
 * Librería de piezas LDraw EXIN CASTILLOS: ¡PROXIMAMENTE!
-* Mis construcciones 3D, tanto customs como reproducciones de oficiales.
+* [Mis construcciones 3D](https://github.com/cpcbegin/tentemodels), tanto customs como reproducciones de oficiales.
 
 ## Instalación Ubuntu Linux
 
@@ -33,14 +33,14 @@ sudo ./install.sh
 Por ahora la instalación en Windows debe hacerse de manera manual:
 
 1. Descargarse [LDView](http://ldview.sourceforge.net).
-1. Crear la carpeta C:\LDRAW y copiar el contenido de este paquete en dicha carpeta.
+1. Crear la carpeta C:\LDRAW
 1. Descomprimir en las siguientes carpetas las librerías de piezas:
    * [C:\LDRAW\TENTE](https://www.dropbox.com/s/irba95qphdxtiq7/LDrawTente_Ultima.zip?dl=0).
    * [C:\LDRAW\EXINCASTILLOS](http://www.exincastillos.es/foro/creando-piezas-virtuales.html) (requiere darse de alta y autenticarse).
    * [C:\LDRAW\LEGO](http://www.ldraw.org).
 1. Descomprimir en las siguientes carpetas los siguientes programas:
    * [MLCad 3.40](http://mlcad.lm-software.com/e_default.htm) en C:\LDRAW\SOFTWARE\MLCAD_V3.40 (Opcionales).
-   * [BMP2LDRAW](http://205.196.123.184/t75cw79px9zg/tvswby3h5qs/BMP2LDraw.zip) en C:\LDRAW\SOFTWARE\BMP2LDRAW
+   * [BMP2LDRAW](https://www.dropbox.com/s/a82giwfiof15ld5/bmp2ldraw.zip?dl=0) en C:\LDRAW\SOFTWARE\BMP2LDRAW
    * [LDDesignPad](http://lddp.sourceforge.net/) en C:\LDRAW\SOFTWARE\LDDP
    * Etc...
 1. Copiar al escritorio el contenido de la carpeta C:\ldraw\software\accesos-directos-Windows.

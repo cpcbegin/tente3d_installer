@@ -1,0 +1,36 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+    "http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+    <Name>Applications</Name>
+	<Menu>
+		<Name>menulibre-tente-y-lego-3d</Name>
+		<Directory>menulibre-tente-y-lego-3d.directory</Directory>
+		<Include>
+			<Filename>BMP2Ldraw.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>LD4DStudio.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>LDDesignPad.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>LDView Tente.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>LDView Lego.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>LDView Exin Castillos.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>MLCAD Tente.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>MLCAD Lego.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>MLCAD Exin Castillos.desktop</Filename>
+		</Include>
+	</Menu>
+</Menu>

@@ -19,6 +19,8 @@ fi
 
 LDRAWHOME="/opt/ldraw"
 LDRAWTMP="/tmp/ldraw"
+APPSMERGED=$HOME/.config/menus/applications-merged
+DESKTOPDIR=$HOME/.local/share/desktop-directories
 DESKTOPPATH=$(xdg-user-dir DESKTOP)
 DESKTOPPATHTENTE=$DESKTOPPATH/Tente_Lego
 FIRSTSUDOUSER=$(grep sudo /etc/group | head -1 | cut -d ":" -f4)
@@ -31,7 +33,7 @@ apt-get install wine
 apt-get install git unrar unzip
 
 echo "Creamos las carpetas necesarias"
-for f in $LDRAWHOME $LDRAWHOME/tente $LDRAWTMP; do
+for f in $LDRAWHOME $LDRAWHOME/tente $LDRAWTMP $APPSMERGED $DESKTOPDIR; do
     if [ -d $f ]; then
         echo "$f ya existe."
     else
@@ -43,7 +45,7 @@ done
 echo "Copiamos todo a $LDRAWHOME"
 cp -rpu * $LDRAWHOME
 
-echo "Copiamos iconos al Escritorio y al Menú de inicio..."
+echo "Copiamos accesos directos al Escritorio y al Menú de inicio..."
 mkdir -p $DESKTOPPATHTENTE
 cp -rpu $LDRAWHOME/software/accesos-directos-linux/* $DESKTOPPATHTENTE
 chown -R $FIRSTSUDOUSER $DESKTOPPATHTENTE
@@ -52,9 +54,6 @@ cp -rpu $LDRAWHOME/software/accesos-directos-linux/* /usr/share/applications/
 echo "Copiamos todos los modelos de Tente del repositorio"
 git clone https://github.com/cpcbegin/tentemodels $LDRAWHOME/models
 chown -R $FIRSTSUDOUSER $DESKTOPPATHTENTE
-
-echo "Todo lo que hay en $LDRAWHOME pertenece al primer usuario '$FIRSTSUDOUSER'"
-chown -R $FIRSTSUDOUSER $LDRAWHOME
 
 echo "Instalando MLCad 3.40..."
 wget -c http://mlcad.lm-software.com/MLCad_V3.40.zip -O $LDRAWTMP/mlcad.zip
@@ -85,17 +84,23 @@ if [ $(arch) = "x86_64" ]; then
 elif [ $(arch | grep 86 | wc -l) > 0 ]; then
     install_tente3d_utils_from_opensuse "xUbuntu_16.04" "i386"
 else 
-    echo "ERROR: NO PUEDO INSTALAR LDRAW EN ESTA ARQUITECTURA"
+    echo "ERROR: NO PUEDO INSTALAR LAS HERRAMIENTAS LDRAW EN ESTA ARQUITECTURA"
 fi
 
 echo "Instalamos Blender y Povray..."
 sudo apt-get install povray blender
 
-
 echo "Instalando la librería de piezas TENTE..."
 wget -c https://www.dropbox.com/s/irba95qphdxtiq7/LDrawTente_Ultima.zip?dl=0 -O $LDRAWTMP/LDrawTente_Ultima.zip
 unzip -u $LDRAWTMP/LDrawTente_Ultima.zip -d $LDRAWHOME/tente
 rm $LDRAWTMP/LDrawTente_Ultima.zip
+
+echo "Creamos la categoría 'Tente y Lego 3D'"
+cp -rpu $LDRAWHOME/software/categorias-linux/user-menulibre-tente-y-lego-3d.menu $APPSMERGED
+cp -rpu $LDRAWHOME/software/categorias-linux/menulibre-tente-y-lego-3d.directory $DESKTOPDIR
+
+echo "Todo lo que hay en $LDRAWHOME pertenece al primer usuario '$FIRSTSUDOUSER'"
+chown -R $FIRSTSUDOUSER $LDRAWHOME
 
 echo "Creamos enlace blando para la librería LEGO"
 ln -svf /usr/share/ldraw $LDRAWHOME/lego

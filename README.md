@@ -20,7 +20,7 @@ This script installs and configured these applications to create and see 3D mode
 * LDraw TENTE set (Jasolo)
 * LDraw LEGO set (http://www.ldraw.org/)
 * LDraw EXIN CASTILLOS set: COMMING SOON!
-* Mis construcciones 3D, tanto customs como reproducciones de oficiales.
+* [My 3D models](https://github.com/cpcbegin/tentemodels), customs and oficial ones.
 
 ## Ubuntu Linux installation
 
@@ -33,14 +33,14 @@ sudo ./install.sh
 For now you need to install this set manually in Windows:
 
 1. Download [LDView](http://ldview.sourceforge.net) and install it.
-1. Make the folder C:\LDRAW and uncompress this kit in this folder.
+1. Make the folder C:\LDRAW
 1. Uncompress these set of pieces in these folders:
    * [C:\LDRAW\TENTE](https://www.dropbox.com/s/irba95qphdxtiq7/LDrawTente_Ultima.zip?dl=0).
    * [C:\LDRAW\EXINCASTILLOS](http://www.exincastillos.es/foro/creando-piezas-virtuales.html) (you need authenticate in this web).
    * [C:\LDRAW\LEGO](http://www.ldraw.org).
 1. Uncompress these software in these folders:
    * [MLCad 3.40](http://mlcad.lm-software.com/e_default.htm) in C:\LDRAW\SOFTWARE\MLCAD_V3.40 (Optional).
-   * [BMP2LDRAW](http://205.196.123.184/t75cw79px9zg/tvswby3h5qs/BMP2LDraw.zip) in C:\LDRAW\SOFTWARE\BMP2LDRAW
+   * [BMP2LDRAW](https://www.dropbox.com/s/a82giwfiof15ld5/bmp2ldraw.zip?dl=0) in C:\LDRAW\SOFTWARE\BMP2LDRAW
    * [LDDesignPad](http://lddp.sourceforge.net/) in C:\LDRAW\SOFTWARE\LDDP
    * Etc...
 1. Copy in Desktop the files of this folder C:\ldraw\software\accesos-directos-Windows.
