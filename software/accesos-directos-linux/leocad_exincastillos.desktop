@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=LeoCAD Exin Castillos
+Comment=Create virtual EXIN CASTILLOS models
+Comment[es]=Crea modelos virtuales EXIN CASTILLOS
+Exec=leocad -l /opt/ldraw/exincastillos/ %f
+Terminal=false
+Type=Application
+Icon=/opt/ldraw/software/iconos/linux/leocadexincastillos.png
+MimeType=application/vnd.leocad;application/x-ldraw;application/x-multi-part-ldraw;application/x-ldlite;
+Categories=Graphics;3DGraphics;Education;
+Keywords=CAD;EXIN CASTILLOS;LDraw;
+

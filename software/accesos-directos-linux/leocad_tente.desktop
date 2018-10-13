@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=LeoCAD Tente
+Comment=Create virtual TENTE models
+Comment[es]=Crea modelos virtuales TENTE
+Exec=leocad -l /opt/ldraw/tente/
+Terminal=false
+Type=Application
+Icon=/opt/ldraw/software/iconos/linux/leocadtente.png
+MimeType=application/vnd.leocad;application/x-ldraw;application/x-multi-part-ldraw;application/x-ldlite;
+Categories=Graphics;3DGraphics;Education;
+Keywords=CAD;TENTE;LDraw;
+

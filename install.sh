@@ -57,7 +57,7 @@ chown -R $FIRSTSUDOUSER $DESKTOPPATHTENTE
 
 echo "Instalando MLCad 3.40..."
 wget -c http://mlcad.lm-software.com/MLCad_V3.40.zip -O $LDRAWTMP/mlcad.zip
-unzip $LDRAWTMP/mlcad.zip -d $LDRAWHOME/software/
+unzip -u $LDRAWTMP/mlcad.zip -d $LDRAWHOME/software/
 rm $LDRAWTMP/mlcad.zip
 
 echo "Instalamos BMP2LDraw..."
@@ -73,12 +73,16 @@ chmod +x $LDRAWHOME/software/lddp//LDDesignPad.exe
 rm $LDRAWTMP/lddp.zip
 
 echo "Instalamos LD4DStudio..."
-mkdir LD4DStudio.rar
 wget -c http://www.ld4dstudio.nl/action/download/LD4DStudio-1-2.rar -O $LDRAWTMP/LD4DStudio.rar
-unrar x $LDRAWTMP/LD4DStudio.rar $LDRAWHOME/software/LD4DStudio
+unrar x -u $LDRAWTMP/LD4DStudio.rar $LDRAWHOME/software/LD4DStudio
 rm $LDRAWTMP/LD4DStudio.rar
 
-echo "Instalamos LDraw"
+echo "Instalamos LDCad..."
+wget -c http://www.melkert.net/action/download/LDCad-1-6b-Linux.tar.bz2 -O $LDRAWTMP/ldcad.tar.bz2
+tar -xjvf ldcad.tar.bz2 -C /opt/ldraw/software
+rm $LDRAWTMP/ldcad.tar.bz2
+
+echo "Instalamos LDraw utils (openSUSE download server)"
 if [ $(arch) = "x86_64" ]; then
     install_tente3d_utils_from_opensuse "xUbuntu_18.04" "amd64"
 elif [ $(arch | grep 86 | wc -l) > 0 ]; then
@@ -94,6 +98,8 @@ echo "Instalando la librería de piezas TENTE..."
 wget -c https://www.dropbox.com/s/irba95qphdxtiq7/LDrawTente_Ultima.zip?dl=0 -O $LDRAWTMP/LDrawTente_Ultima.zip
 unzip -u $LDRAWTMP/LDrawTente_Ultima.zip -d $LDRAWHOME/tente
 rm $LDRAWTMP/LDrawTente_Ultima.zip
+echo "Renombramos LDCONFIG.LDR por LDConfig.ldr (compatibilidad con software nativo GNU/Linux)"
+mv $LDRAWHOME/tente/LDCONFIG.LDR $LDRAWHOME/tente/LDConfig.ldr
 
 echo "Creamos la categoría 'Tente y Lego 3D'"
 cp -rpu $LDRAWHOME/software/categorias-linux/user-menulibre-tente-y-lego-3d.menu $APPSMERGED
@@ -104,3 +110,7 @@ chown -R $FIRSTSUDOUSER $LDRAWHOME
 
 echo "Creamos enlace blando para la librería LEGO"
 ln -svf /usr/share/ldraw $LDRAWHOME/lego
+
+echo "Creamos enlace blando a la configuración de povray"
+ln -s /etc/povray/ $HOME/.povray
+chown -R $FIRSTSUDOUSER $HOME/.povray

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/opt/ldraw/software/LDCad-1-6b-Linux/LDCad64
+Path=/opt/ldraw/software/LDCad-1-6b-Linux
+Name[es_ES]=LDCad
+Comment[es_ES]=Editor LDraw de modelos LEGO
+Name=LDCad
+Comment=Pasa pegatinas a fichas de tente
+Icon=/opt/ldraw/software/LDCad-1-6b-Linux/gui/default/partBinItems/step.png
+Categories=Tente3D;Graphics;3DGraphics;RasterGraphics
