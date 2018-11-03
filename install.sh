@@ -30,6 +30,8 @@ apt-get update
 apt-get -y upgrade
 echo "Instalamos wine"
 apt-get install wine
+apt-get install wine-stable
+echo "Instalamos git y descompresores"
 apt-get install git unrar unzip
 
 echo "Creamos las carpetas necesarias"
@@ -74,12 +76,14 @@ rm $LDRAWTMP/lddp.zip
 
 echo "Instalamos LD4DStudio..."
 wget -c http://www.ld4dstudio.nl/action/download/LD4DStudio-1-2.rar -O $LDRAWTMP/LD4DStudio.rar
+mkdir -p $LDRAWHOME/software/LD4DStudio
+echo "unrar x -u $LDRAWTMP/LD4DStudio.rar $LDRAWHOME/software/LD4DStudio"
 unrar x -u $LDRAWTMP/LD4DStudio.rar $LDRAWHOME/software/LD4DStudio
 rm $LDRAWTMP/LD4DStudio.rar
 
 echo "Instalamos LDCad..."
 wget -c http://www.melkert.net/action/download/LDCad-1-6b-Linux.tar.bz2 -O $LDRAWTMP/ldcad.tar.bz2
-tar -xjvf ldcad.tar.bz2 -C /opt/ldraw/software
+tar -xjvf $LDRAWTMP/ldcad.tar.bz2 -C /opt/ldraw/software
 rm $LDRAWTMP/ldcad.tar.bz2
 
 echo "Instalamos LDraw utils (openSUSE download server)"
