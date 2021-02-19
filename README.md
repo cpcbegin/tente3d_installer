@@ -1,5 +1,9 @@
 # Multi-construction LDraw configuration kit
 ![Tente 3D](https://raw.githubusercontent.com/cpcbegin/tente3d_installer/master/images/bannertente.png)
+
+THERE IS A NEW SCRIPT TO INSTALL THESE TOOLS AND MUCH MORE: [RETROMULTIINSTALLER](https://gitlab.com/cpcbegin/retromultiinstaller). BETTER USE THIS NEW ONE.
+
+
 ## Content
 This script installs and configured these applications to create and see 3D models of several construction systems:
 
@@ -35,7 +39,7 @@ For now you need to install this set manually in Windows:
 1. Download [LDView](http://ldview.sourceforge.net) and install it.
 1. Make the folder C:\LDRAW
 1. Uncompress these set of pieces in these folders:
-   * [C:\LDRAW\TENTE](https://www.dropbox.com/s/irba95qphdxtiq7/LDrawTente_Ultima.zip?dl=0).
+   * [C:\LDRAW\TENTE](https://www.dropbox.com/s/a82giwfiof15ld5/bmp2ldraw.zip?dl=1).
    * [C:\LDRAW\EXINCASTILLOS](http://www.exincastillos.es/foro/creando-piezas-virtuales.html) (you need authenticate in this web).
    * [C:\LDRAW\LEGO](http://www.ldraw.org).
 1. Uncompress these software in these folders:
